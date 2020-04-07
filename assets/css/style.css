@@ -13,7 +13,6 @@ header{
 
 main{
     width: 80vw;
-    height: 100vh;
     margin: auto;
     background-color: white;
 }
@@ -82,16 +81,22 @@ h1{
 
 #portfolio-examples{
     background-color: thistle;
+    width: 75vw;
+    margin: auto;
+
 }
 
 .box-border{
+    height: 300px;
     width: 300px;
     float: left;
     text-align: center;
+
 }
 
 .box-image{
-    width: 100px;
+    max-height: 200px;
+    max-width: 300px;
     z-index: 2;
 }
 
