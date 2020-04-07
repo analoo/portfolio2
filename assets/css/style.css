@@ -1,0 +1,79 @@
+body{
+    background-color: thistle;
+    font-family: 'Abril Fatface', cursive;
+
+
+}
+
+header{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+main{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    background-color: white;
+}
+
+#nav-bar{
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid 10px thistle;    
+}
+
+.nav{
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    color: black;
+    line-height: 2;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.nav:hover{
+    background-color: thistle;
+    color: white;
+
+}
+
+.box{
+    box-shadow: 2px 2px lightgrey;
+}
+
+#my-photo{
+    width: 30%;
+    margin: 40px;
+}
+
+.float-left{
+    float: left;
+    box-shadow: 5px 5px lightgray;
+}
+
+.float-right{
+    float: right;
+    height: 100%;
+}
+
+#about-me{
+    width: 60%;
+    margin-top: 40px;
+}
+
+h3, p{
+    font-family: 'Open Sans Condensed';
+    padding-left: 10px;
+    padding-right: 10px;
+
+    line-height: 2;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    
+}
+
+
