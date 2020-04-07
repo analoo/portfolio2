@@ -76,4 +76,50 @@ h1{
     
 }
 
+#portfolio-examples{
+    background-color: thistle;
+}
+
+.box-border{
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+.box-image{
+    width: 100px;
+    z-index: 2;
+}
+
+#selected{
+    background-color: white;
+    position: fixed;
+    left: 20%;
+    top: 30%;
+    width: 50%;
+    margin: auto;
+    z-index: 2;
+    box-shadow: 5px 5px lightgray;
+    border: solid 1px lightgray;
+
+}
+
+.titles{
+    display: inline;
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
+
+.expand-image{
+    display: inline;
+    float: left;
+    width: 20%;
+    margin-left: 40px;
+}
+
+
+
+
+
 
