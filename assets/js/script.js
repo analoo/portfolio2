@@ -70,18 +70,33 @@ var projects = [
     desc:"This website can generate an alpha numeric password between 8 and 128 characters. The page prompts the user to specify the required length of the password. Ther user is then prompted through 4 questions that ask whether the password should include: upper case letter lower case letters numbers special characters"
 
 },
-{
-    name: "Loteria (WIP)",
-    source: "assets/images/loteria.png",
-    url: "https://github.com/analoo/loteria",
-    site: "https://analoo.github.io/loteria/",
-    desc: "Currently working on making this classic game available to play amongst my family members across the west coast."
-},
+// {
+//     name: "Loteria (WIP)",
+//     source: "assets/images/loteria.png",
+//     url: "https://github.com/analoo/loteria",
+//     site: "https://analoo.github.io/loteria/",
+//     desc: "Currently working on making this classic game available to play amongst my family members across the west coast."
+// },
 
 ]
 
 for (let i=0 ; i< projects.length; i++){
-    var border = $("<div class='box-border'></div>");
+    var border = $("<figure class='figure box-border'></figure>");
+    $(`#${i}`).append(border);
+
+    var boxTitle = $("<figcaption class='figure-caption text-center box-title''></figcaption>");
+    $(border).append(boxTitle);
+    $(boxTitle).text(projects[i].name);
+
+
+    var image = $("<img class='figure-img img-fluid rounded box-image'>")
+    $(border).append(image);
+    $(image).attr("src", projects[i].source);
+    $(image).data("key", i);
+
+
+
+    {/* var border = $("<div class='box-border'></div>");
     $("#portfolio-examples").append(border);
 
     var boxTitle = $("<h4 class='box-title'></h4>");
@@ -92,7 +107,7 @@ for (let i=0 ; i< projects.length; i++){
     var image = $("<img class='box-image'/>")
     $(border).append(image);
     $(image).attr("src", projects[i].source);
-    $(image).data("key", i);
+    $(image).data("key", i); */}
 
 }
 
@@ -105,21 +120,31 @@ $(".box-image").on("click", function(){
     var boxTitle = $("<h4 class='box-title'></h4>");
     var boxDesc = $("<p class='box-description'></p>")
     var image = $("<img class='expand-image'/>")
-    var link = $("<a href="+projects[index].url+" target='_blank'>Github</a>")
-    var site  = $("<a href="+projects[index].site+" target='_blank'> live site</a>")
 
+    // <a href="https://github.com/analoo" target="_blank">
+    //                         <img class="float-left" id="gitHub" src="assets/images/github.png" alt="gitHub" />
+    //                     </a>
 
+    var link = $("<a href="+projects[index].url+" target='_blank'><img class='float-left' id='gitHub' src='assets/images/github.png' alt='gitHub' /></a>")
+    var site  = $("<a href="+projects[index].site+" target='_blank'><img class='float-left' id='livesite' src='assets/images/link.png' alt='livesite' /></a>")
 
-    
     $(text).append(boxTitle,boxDesc,link, site);
     $(boxTitle).text(projects[index].name);
     $(boxDesc).text(projects[index].desc);
     (image).attr("src", projects[index].source);
 
+    $("#shield").css("display","inline")
     $("#selected").css("display", "inline");
     $("#selected").append(image);
     $("#selected").append(text);
 
+    $("#shield").on("click", function(){
+        $("#shield").css("display","none")
+        $("#selected").css("display","none")
+    });
 
 })
 
+$("#num").on("mouseover", function(){
+    $("#number").css("display","inline")
+})

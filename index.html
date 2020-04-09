@@ -8,63 +8,133 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Open+Sans+Condensed&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bsstyle.css" />
 
 </head>
 
 
 <body>
     <header>
-        <h1>Ana Medrano</h1>
-    </header>
-    <main>
-
-
-        <div id="nav-bar">
-            <a class="nav" id="home-nav" href="#home">Home</a>
-            <a class="nav" id="portfolio-nav" href="#portfolio">Portfolio</a>
-            <a class="nav" id="contact-nav" href="#contact">Contact</a>
-            <a class="nav" id="resume-nav" href="#resume">Resume</a>
+        <div class="jumbotron">
+            <div id="name">
+                <h4 class="display-3">Ana Medrano <span id="fern">Fernandez</span></h4>
+            </div>
         </div>
+    </header>
 
+    <main>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-nav" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="portfolio-nav" href="#portfolio">Portfolio</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" id="contact-nav" href="#contact">Contact</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" id="resume-nav" href="#resume">Resume</a>
+            </li>
+        </ul>
 
         <div class="main-panel" id="home">
-            <div class="float-left">
-                <img id="my-photo" src="assets/images/ana_may2019.png" alt="photo of Ana Medrano" />
-                <a href="https://www.linkedin.com/in/ana-medrano-fernandez/" target="_blank">
-                    <img class="float-left" id="linkedIn" src="assets/images/linkedIn.png" alt="linkedIn" />
-                </a>
-                <a href="https://github.com/analoo" target="_blank">
-                    <img class="float-left" id="gitHub" src="assets/images/github.png" alt="gitHub" />
-                </a>
-            </div>
 
-            <div id="about-me">
-                <h3> About Me </h3>
-                <p>
-                    Front-End Developer with 5+ years of experience building simple and intuitive tools for HR
-                    departments. Recent graduate with a certificate UC Berkeley extension school with skills in CSS,
-                    Javascript, HTML, [placeholder]. A passion for people is at the core of everything that I do - both
-                    my focus of analytics within HR, cross team collaboration and user experience. I am a creative
-                    problem solver who sees beyond individual projects and tasks to see how work fits into the bigger
-                    picture. In my most recent role, I saw a gap in performance data. I quickly leveraged google sheets
-                    and query functionality to make a database that was used as a temporary employee performance
-                    management system. This emphasis on execution often means that I am seen as a team player and a go
-                    to person for collaboration and resolving issues. I also have a high bar for quality and want to
-                    make magic for end users. I am consensus driven and often focus on creating minimum viable products
-                    quickly to ensure that end users and stakeholders can provide feedback early and often. I am most
-                    excited by big, challenging problems which I approach with calmness and good organizational skills.
-                </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <img id="my-photo" src="assets/images/AMF-2020.jpeg" alt="photo of Ana Medrano" />
+                        <div class="card">
+                            <div class="card-body">
+                            <button type="button" class="btn btn-link">
+                                <a href="https://www.linkedin.com/in/ana-medrano-fernandez/" target="_blank">
+                                    <img class="float-left" id="linkedIn" src="assets/images/linkedIn.png" alt="linkedIn" />
+                                </a> </button>
+                            <button type="button" class="btn btn-link">
+            
+                                <a href="https://github.com/analoo" target="_blank">
+                                    <img class="float-left" id="gitHub" src="assets/images/github.png" alt="gitHub" />
+                                </a> </button>
+                            <button type="button" class="btn btn-link">
+            
+                                <a href="mailto:amedrano.fernandez@gmail.com">
+                                    @
+                                </a> </button>
+                            <button type="button" class="btn btn-link">
+            
+                                <a id="num"> # 
+                                </a> </button>
+                            </div>
+                            <p id="number">(909)856-5256</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12" id="about-me">
+
+                        <h3> About Me </h3>
+                        <p>
+                            Front-End Developer with 5+ years of experience building simple and intuitive tools for
+                            HR
+                            departments. Recent graduate with a certificate UC Berkeley extension school with skills
+                            in
+                            CSS, Javascript, HTML, [placeholder]. A passion for people is at the core of everything
+                            that I do
+                            - both
+                            my focus of analytics within HR, cross team collaboration and user experience. I am a
+                            creative
+                            problem solver who sees beyond individual projects and tasks to see how work fits into
+                            the
+                            bigger
+                            picture. In my most recent role, I saw a gap in performance data. I quickly leveraged
+                            google
+                            sheets
+                            and query functionality to make a database that was used as a temporary employee
+                            performance
+                            management system. This emphasis on execution often means that I am seen as a team
+                            player
+                            and a go
+                            to person for collaboration and resolving issues. I also have a high bar for quality and
+                            want to
+                            make magic for end users. I am consensus driven and often focus on creating minimum
+                            viable
+                            products
+                            quickly to ensure that end users and stakeholders can provide feedback early and often.
+                            I am
+                            most
+                            excited by big, challenging problems which I approach with calmness and good
+                            organizational
+                            skills.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
+
+
         <div class="main-panel" id="portfolio" style="display: none;">
-            <h3> Click on the projects below to learn more about them! </h3>
             <div id="portfolio-examples">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md" id="0">
+                        </div>
+                        <div class="col-sm" id="1">
+                        </div>
+                        <div class="col-sm" id="2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm" id="3">
+                        </div>
+                        <div class="col-sm" id="4">
+                        </div>
+                        <div class="col-sm" id="5">
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -72,15 +142,18 @@
 
             </div>
 
+            <div id="shield">
+
+            </div>
+
         </div>
 
 
-        <div class="main-panel" id="contact" style="display: none;">
+        <!-- <div class="main-panel" id="contact" style="display: none;">
             <h3>Contact Me</h3>
+            
+        </div> -->
 
-
-
-        </div>
         <div class="main-panel" id="resume" style="display: none;">
             <!-- <h3>Resume</h3>
             <div id="resume-summary" class="resume-section">
@@ -108,7 +181,7 @@
                 <h4 class="resume-heading">RELEVANT EXPERIENCE</h4>
                 <p class="company">GRAND ROUNDS INC</p>
                 <p class="timing">Jan 2018 – August 2019</p>
-                <p class="title">Senior People Analytics Manager (Apr ’19 - Present) | People Analytics Manager (Jan ’18
+                <p class="title">Senior People Analytics Manager (Apr ’19 - Aug ’19) | People Analytics Manager (Jan ’18
                     - Mar ’19)</p>
 
                 <div class="work-div"> Talent Management: Enabled talent management by single handedly creating
